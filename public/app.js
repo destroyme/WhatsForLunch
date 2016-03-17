@@ -1,5 +1,18 @@
 var Spots = [
-"Cafe Katja", "Sticky Rice - Coalesce Lunch Civil War Ensues", "An Choi", "Dudleys", "Congee Village","Dimes","Wolfnights","Spritzen House","Zen","Bario Chino","Vanessa's Dumplings","Pho Grand","Kotu House"
+"Cafe Katja",
+"Sticky Rice - Coalesce Lunch Civil War Ensues",
+"An Choi",
+"Dudleys", 
+"Congee Village",
+"Dimes",
+"Wolfnights",
+"Spritzen House",
+"Zen",
+"Bario Chino",
+"Vanessa's Dumplings",
+"Pho Grand",
+"Berkle Park" ,
+"Kotu House"
 ]
 var WhatsForLunch = {
   startbutton: $('.startbutton'),
@@ -22,3 +35,17 @@ var WhatsForLunch = {
 }
 
 WhatsForLunch.start();
+
+$(".passwordsubmit").on('click', function (){
+  validateForm()
+})
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == 5555) {
+        console.log('success');
+        $('form').remove();
+    } else {
+      console.log('fail')
+    }
+}

@@ -64,3 +64,18 @@ text-align: left;
   background: white;
   border-right: 50px solid #00ffec;
 }
+
+form {
+  position: absolute;
+  margin: auto;
+  width: 80%;
+  height: 20em;
+  background: white;
+}
+
+.passwordsubmit {
+  height: 10px;
+  width: 10px;
+  background: #00ffec;
+  text-align: right;
+}

@@ -4,13 +4,14 @@ var express      = require('express'),
     PORT         = process.env.PORT || 3000.
 
 
-  server.use(express.static('./public'));
-
-  server.listen(PORT, function(){
-    console.log("Server is listening on " + PORT);
-  });
+server.use(express.static('./public'));
 
 
-server.get('/', function (req, res){
-  res.render('index')
-})
+  server.get('/', function (req, res){
+    res.render('index')
+    console.log('hit one')
+  })
+
+server.listen(PORT, function(){
+  console.log("Server is listening on " + PORT);
+});
