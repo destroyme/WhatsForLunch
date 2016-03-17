@@ -1,10 +1,9 @@
 var Spots = [
-<<<<<<< HEAD
 "Cafe Katja",
-"Sticky Rice - Coalesce Lunch Civil War Ensues",
+"Sticky Rice",
 "An Choi",
-"Dudleys", 
-"Congee Village",
+"Dudleys",
+"Spicy Village",
 "Dimes",
 "Wolfnights",
 "Spritzen House",
@@ -12,12 +11,8 @@ var Spots = [
 "Bario Chino",
 "Vanessa's Dumplings",
 "Pho Grand",
-"Berkle Park" ,
-"Kotu House"
-=======
-"Cafe Katja", "Sticky Rice", "An Choi", "Dudleys", "Spicy Village","Dimes","Wolfnights","Spritzen House","Zen","Bario Chino","Vanessa's Dumplings","Pho Grand","Kotu House"
->>>>>>> 3d65ed73e944174bfaf901d4d4658838fd64635a
-]
+"Kotu House" ]
+
 var WhatsForLunch = {
   startbutton: $('.startbutton'),
   lunchspot:$('.lunchspot'),
