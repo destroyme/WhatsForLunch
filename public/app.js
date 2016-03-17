@@ -1,5 +1,5 @@
 var Spots = [
-"Cafe Katja", "Sticky Rice - Coalesce Lunch Civil War Ensues", "An Choi", "Dudleys", "Congee Village","Dimes","Wolfnights","Spritzen House","Zen","Bario Chino","Vanessa's Dumplings","Pho Grand","Kotu House"
+"Cafe Katja", "Sticky Rice", "An Choi", "Dudleys", "Spicy Village","Dimes","Wolfnights","Spritzen House","Zen","Bario Chino","Vanessa's Dumplings","Pho Grand","Kotu House"
 ]
 var WhatsForLunch = {
   startbutton: $('.startbutton'),
