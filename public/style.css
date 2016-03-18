@@ -52,7 +52,8 @@ embed {max-width: 100%;}
 */
 
 /* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+html {overflow-y: scroll; 
+}
 
 /* we use a lot of ULs that aren't bulleted.
 	you'll have to restore the bullets within content,
@@ -146,9 +147,9 @@ input[type=button] {width: auto; overflow: visible;}
 
 .fade-in {
   opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  -webkit-animation:fadeIn ease-in .9;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in .9;
+  animation:fadeIn ease-in .9;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
@@ -180,21 +181,28 @@ input[type=button] {width: auto; overflow: visible;}
 
 /*Ok now lets do this*/ 
 
+html {
+	height: 100%;
+	background: url("https://s3.amazonaws.com/coalescecreative/eatin.jpg") no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
 body {
   text-align: center;
   margin: 2em;
   padding: 1em;
   color: #444444;
-  background-image: url("http://i.imgur.com/T6QmXOB.jpg");
   font-size: 1em;
   font-family: helvetica, 'Josefin Sans', sans-serif;
-  min-height: 100%;
 }
 
 .lunchspot{
   font-size: 2em;
   color: #444444;
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   margin-bottom: 1em;
 }
 
@@ -224,6 +232,7 @@ button {
 #button-wrapper {
 	padding-top: 25px;
 	position: relative;
+	padding-bottom: 10px;
 }
 
 button:hover {
