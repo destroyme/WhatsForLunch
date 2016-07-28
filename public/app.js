@@ -11,7 +11,8 @@ var Spots = [
 "Bario Chino",
 "Vanessa's Dumplings",
 "Pho Grand",
-"Kotu House" ]
+"Kotu House",
+"Essex Taco" ]
 
 var WhatsForLunch = {
   startbutton: $('.startbutton'),
