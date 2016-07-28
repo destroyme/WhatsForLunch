@@ -13,16 +13,21 @@
     <div class="lunchspot"></div>
     <div id="button-wrapper">
     <button class="startbutton"> LUNCH ME</button>
+<script>
+var data = <%- JSON.stringify(doople)%>
 
+console.log( 'Data IS', data.main.temp );
 
+</script>
+
+<br> The temperature is <%= JSON.stringify(doople.main.temp)%> degrees </br>
 
     </div>
   </div>
   <div class="bottomtwo"></div>
 </div>
 <div class="logo fade-in two">
-  <a href="http://coalesce.nyc" alt="Coalesce" target="_blank"><img src="http://i.imgur.com/48eRKVl.png"></a> <div class="version"> v0.0.3 </div> </div>
+  <a href="http://coalesce.nyc" alt="Coalesce" target="_blank"><img src="http://i.imgur.com/48eRKVl.png"></a> <div class="version"> v1.0.3 </div> </div>
 <script src="app.js"></script>
-<script src="weather.js"></script>
 </body>
 </html>

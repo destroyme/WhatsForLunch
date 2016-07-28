@@ -12,7 +12,18 @@ server.use(express.static('./public'));
 server.set('view engine', 'ejs');
 
 server.get('/', function (req, res, next){
-    res.render('index')
+	http.get('http://api.openweathermap.org/data/2.5/weather?zip=' + 'NewYork' + ',us&units=imperial&APPID=' + WeatherAPI, function(data){
+		data.on('data', function(data){
+			var dataString = data;
+      var Obj = JSON.parse(data.toString());
+      console.log( JSON.parse(data.toString()) );
+      //Obj = {hi:'bob'};
+      // res.send(dataString);
+//      res.render('index', {doople:JSON.stringify( Obj )})
+      res.render('index', {doople:Obj})
+		});
+	});
+
 });
 
 
