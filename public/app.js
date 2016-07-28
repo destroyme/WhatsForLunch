@@ -35,17 +35,3 @@ var WhatsForLunch = {
 }
 
 WhatsForLunch.start();
-
-$(".passwordsubmit").on('click', function (){
-  validateForm()
-})
-
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == 5555) {
-        console.log('success');
-        $('form').remove();
-    } else {
-      console.log('fail')
-    }
-}
